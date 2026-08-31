@@ -1,12 +1,12 @@
 {
   "name": "@chainproof/server",
   "version": "0.1.0",
-  "description": "ChainProof REST API server — thin-client scanning over HTTP",
+  "description": "ChainProof REST API server \u2014 thin-client scanning over HTTP",
   "main": "dist/server.js",
   "scripts": {
-    "build": "tsc",
-    "dev": "tsc --watch",
-    "start": "node dist/server.js"
+    "build": "node init && tsc",
+    "dev": "node init && tsc --watch",
+    "start": "node init && node dist/server.js"
   },
   "dependencies": {
     "@chainproof/core": "*",

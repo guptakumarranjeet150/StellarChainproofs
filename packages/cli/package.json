@@ -7,9 +7,9 @@
     "chainproof": "dist/cli.js"
   },
   "scripts": {
-    "build": "tsc",
-    "dev": "tsc --watch",
-    "start": "node dist/cli.js",
+    "build": "node init && tsc",
+    "dev": "node init && tsc --watch",
+    "start": "node init && node dist/cli.js",
     "test": "jest"
   },
   "dependencies": {
