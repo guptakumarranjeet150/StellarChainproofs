@@ -1,14 +1,24 @@
 {
   "name": "chainproof-vscode",
-  "displayName": "ChainProof — Smart Contract Auditor",
+  "displayName": "ChainProof \u2014 Smart Contract Auditor",
   "description": "Real-time vulnerability scanning and gas optimization for Solidity",
   "version": "0.1.0",
   "publisher": "chainproof",
   "engines": {
     "vscode": "^1.85.0"
   },
-  "categories": ["Linters", "Other"],
-  "keywords": ["solidity", "ethereum", "security", "audit", "web3", "smart-contracts"],
+  "categories": [
+    "Linters",
+    "Other"
+  ],
+  "keywords": [
+    "solidity",
+    "ethereum",
+    "security",
+    "audit",
+    "web3",
+    "smart-contracts"
+  ],
   "icon": "icon.png",
   "activationEvents": [
     "onLanguage:solidity"
@@ -79,7 +89,13 @@
         },
         "chainproof.minSeverity": {
           "type": "string",
-          "enum": ["critical", "high", "medium", "low", "info"],
+          "enum": [
+            "critical",
+            "high",
+            "medium",
+            "low",
+            "info"
+          ],
           "default": "low",
           "description": "Minimum severity level to display"
         }
@@ -96,8 +112,8 @@
     }
   },
   "scripts": {
-    "build": "tsc",
-    "dev": "tsc --watch",
+    "build": "node init && tsc",
+    "dev": "node init && tsc --watch",
     "package": "vsce package"
   },
   "dependencies": {
