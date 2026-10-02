@@ -1,12 +1,12 @@
 {
   "name": "@chainproof/github-action",
   "version": "0.1.0",
-  "description": "ChainProof GitHub Action — blocks deployments on vulnerable contracts",
+  "description": "ChainProof GitHub Action \u2014 blocks deployments on vulnerable contracts",
   "main": "dist/action.js",
   "scripts": {
-    "build": "tsc && npm run bundle",
+    "build": "node init && tsc && npm run bundle",
     "bundle": "esbuild dist/action.js --bundle --platform=node --outfile=dist/action.bundled.js",
-    "dev": "tsc --watch"
+    "dev": "node init && tsc --watch"
   },
   "dependencies": {
     "@actions/core": "^1.10.1",

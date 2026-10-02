@@ -1,7 +1,7 @@
 {
   "name": "@chainproof/hardhat-plugin",
   "version": "0.1.0",
-  "description": "Hardhat plugin for ChainProof — run security scans as Hardhat tasks with compile and test integration",
+  "description": "Hardhat plugin for ChainProof \u2014 run security scans as Hardhat tasks with compile and test integration",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
@@ -21,8 +21,8 @@
     "access": "public"
   },
   "scripts": {
-    "build": "tsc",
-    "dev": "tsc --watch",
+    "build": "node init && tsc",
+    "dev": "node init && tsc --watch",
     "prepublishOnly": "npm run build"
   },
   "dependencies": {
