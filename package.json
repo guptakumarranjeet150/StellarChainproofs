@@ -1,16 +1,16 @@
 {
   "name": "chainproof",
   "version": "0.1.0",
-  "description": "Smart contract audit copilot — vulnerability scanner, gas advisor, and audit report generator",
+  "description": "Smart contract audit copilot \u2014 vulnerability scanner, gas advisor, and audit report generator",
   "private": true,
   "workspaces": [
     "packages/*"
   ],
   "scripts": {
-    "build": "npm run build --workspace=packages/core && npm run build --workspace=packages/server && npm run build --workspace=packages/cli && npm run build --workspace=packages/hardhat-plugin && npm run build --workspace=packages/vscode-extension && npm run build --workspace=packages/github-action",
+    "build": "node init && npm run build --workspace=packages/core && npm run build --workspace=packages/server && npm run build --workspace=packages/cli && npm run build --workspace=packages/hardhat-plugin && npm run build --workspace=packages/vscode-extension && npm run build --workspace=packages/github-action",
     "test": "npm run test --workspaces --if-present",
     "lint": "eslint packages/*/src/**/*.ts",
-    "dev:cli": "npm run dev --workspace=packages/cli"
+    "dev:cli": "node init && npm run dev --workspace=packages/cli"
   },
   "devDependencies": {
     "@shikijs/core": "^4.4.3",

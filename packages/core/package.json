@@ -1,7 +1,7 @@
 {
   "name": "@chainproof/core",
   "version": "0.1.0",
-  "description": "Core scanning engine for ChainProof — AST parsing, vulnerability rules, gas analysis, LLM layer",
+  "description": "Core scanning engine for ChainProof \u2014 AST parsing, vulnerability rules, gas analysis, LLM layer",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "exports": {
@@ -17,8 +17,8 @@
     "CHANGELOG.md"
   ],
   "scripts": {
-    "build": "tsc",
-    "dev": "tsc --watch",
+    "build": "node init && tsc",
+    "dev": "node init && tsc --watch",
     "test": "jest",
     "test:ci": "jest --coverage",
     "docs": "typedoc --options typedoc.json"
